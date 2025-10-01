@@ -12,19 +12,19 @@ public class Main {
         juan.agregarMateria(new Materia("Matematica","MAT101", 4, 8.5));
         juan.agregarMateria(new Materia("Base de datos", "BD102", 5, 10));
 
-        Estudiante ricardo = new Estudiante("Ricardo", "Tapia", 22, programacion.getNombre(), 10, 3);
-        ricardo.agregarMateria(new Materia("Matematica", "MAT101", 4, 10));
-        ricardo.agregarMateria(new Materia("Base de datos", "BD102", 5, 10));
+        Estudiante david = new Estudiante("David", "Quint", 22, programacion.getNombre(), 10, 3);
+        david.agregarMateria(new Materia("Matematica", "MAT101", 4, 10));
+        david.agregarMateria(new Materia("Base de datos", "BD102", 5, 10));
 
         programacion.agregarEstudiante(fabian);
         programacion.agregarEstudiante(juan);
-        programacion.agregarEstudiante(ricardo);
+        programacion.agregarEstudiante(david);
 
         System.out.println("Resultados final");
 
         System.out.printf("Promedio de %s: %.2f\n", fabian.getNombre(), fabian.calcularPromedio());
         System.out.printf("Promedio de %s: %.2f\n", juan.getNombre(), juan.calcularPromedio());
-        System.out.printf("Promedio de %s: %.2f\n", ricardo.getNombre(),ricardo.calcularPromedio());
+        System.out.printf("Promedio de %s: %.2f\n", david.getNombre(),ricardo.calcularPromedio());
 
         programacion.listarEstudiantes();
 
